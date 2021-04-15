@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    position: relative;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .7s ease;  
+}
+
+body.toggled { 
+    background-color: #1c323b;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.header_head {
+    position: relative;
+    background-color: #191819;   
+}
+
+.head_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_inner .logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.head_inner nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.head_inner nav ul li{
+    list-style-type: none;
+}
+.head_inner nav ul li a, .head_inner nav ul li span{
+    font-size: 14px;
+    display: inline-block;
+    color: #ccc;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.head_inner nav ul li.toggle span{
+    position: relative;
+    width: 45px;
+    height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 10em;
+    padding: 0;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.head_inner nav ul li.toggle span:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 10em;
+    transition: all .5s ease;
+}
+
+body.toggled .head_inner nav ul li.toggle span:after{
+    left: 20px;
+}
+body.toggled .header_body_inner .left .title{
+    color: #fff;
+}
+.header_body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+.header_body_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.header_body_inner .left .title{
+    color: #333;
+    font-size: 46px;
+    transition: all .5s ease;
+
+}
+.header_body_inner .left .title span{
+    color: #f83b3a;
+}
+a.btn{
+    display: inline-block;
+    background-color: #f83b3a;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.header_body_inner .right img{
+    border-radius: 20%;
+    width: 350px;
+    height: 423px;
+}
+
+section {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.section_title{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.section_text {
+    margin-top: 45px;
+}
+.section_text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+body.toggled .section_text p, body.toggled .section_title {
+    color: #fff;
+}
+
+.project_items {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project_items .item img{
+    max-width: 100%;
+}
+
+.project_items .item{
+    display: block;
+    position: relative;
+    margin: 0 10px 15px 0;
+    width: calc(100% / 3 - 10px);
+}
+
+.project_items .item:last-child{
+    margin-right: 0;
+}
+
+.project_btn{
+    display: flex;
+    justify-content: center;
+}
+
+.contact_form {
+    position: relative;
+    max-width: 700px;
+    margin: 45px auto;
+    text-align: center;
+}
+
+.contacts_form form input {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 30px;
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+.contacts_form form textarea{
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0 10px 30px;
+}
+.contacts_form form button{
+    background-color: #f83b3a;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+}
+footer{
+    position: relative;
+    padding: 20px 0;
+    background-color: #191819;
+}
+footer p{
+    text-align: center;
+    color: #ccc;
+}
+
+.head_inner nav ul li a:hover {
+    color: #1c323b;
+}
